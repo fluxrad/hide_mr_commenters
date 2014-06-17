@@ -35,13 +35,3 @@ function toggleCommenter(userName, muteAction) {
     }
   });
 }
-
-// show the MR icon
-chrome.tabs.onUpdated.addListener(showMRIconAction);
-
-
-function showMRIconAction(tabId, changeInfo, tab) {
-  if (tab.url.indexOf('marginalrevolution.com') {
-    chrome.pageAction.show(tabId);
-  }
-};
