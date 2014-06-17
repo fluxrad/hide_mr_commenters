@@ -5,7 +5,6 @@
   "description": "This extension hides specific commenters on Marginal Revolution",
   "icons" : { "128" : "marginalrevolution.png" },
   "version": "1.0",
-  "background_page" : "background.html",
   "permissions": [
     "tabs",
     "storage",
@@ -13,9 +12,9 @@
     "https://marginalrevolution.com/*"
   ],
   "page_action": {
-    "default_title" : "MR Hide Commenter",
-    "default_icon" : "marginalrevolution.png",
-    "page_action" : "popup.html"
+    "default_name": "MR Hide Commenter",
+    "default_icon": "marginalrevolution19.png",
+    "default_popup": "popup.html"
   },
   "content_scripts": [ { 
     "js": [ "jquery.min.js", "background.js"],
