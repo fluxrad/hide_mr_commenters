@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "MR Hide Commenter",
+  "name": "Hide MR Commenters",
   "description": "This extension hides specific commenters on Marginal Revolution",
   "icons" : { "128" : "marginalrevolution.png" },
   "version": "1.0",
@@ -9,8 +9,8 @@
   "permissions": [
     "tabs",
     "storage",
-    "http://*/*", 
-    "https://*/*"
+    "http://marginalrevolution.com/*", 
+    "https://marginalrevolution.com/*"
   ],
   "page_action": {
     "default_title" : "MR Hide Commenter",
@@ -19,6 +19,6 @@
   },
   "content_scripts": [ { 
     "js": [ "jquery.min.js", "background.js"],
-    "matches": ["http://*/*", "https://*/*"]
+    "matches": ["http://marginalrevolution.com/*", "https://marginalrevolution.com/*"]
   }]
 }
