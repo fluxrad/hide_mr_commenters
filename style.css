@@ -1,0 +1,17 @@
+.muted_author {
+    text-decoration: line-through;
+}
+
+.mute_button {
+    cursor: default;
+}
+
+.thread_toggle {
+    cursor: default;
+}
+
+.nodisplay {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
